@@ -443,11 +443,11 @@ socket.setdefaulttimeout(5)
 
 
 class Ec2Metadata(object):
-    ec2_metadata_token_uri = 'http://169.254.169.254/latest/api/token'
-    ec2_metadata_uri = 'http://169.254.169.254/latest/meta-data/'
-    ec2_sshdata_uri = 'http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key'
-    ec2_userdata_uri = 'http://169.254.169.254/latest/user-data/'
-    ec2_dynamicdata_uri = 'http://169.254.169.254/latest/dynamic/'
+    ec2_metadata_token_uri = 'http://localhost:1338/latest/api/token'
+    ec2_metadata_uri = 'http://localhost:1338/latest/meta-data/'
+    ec2_sshdata_uri = 'http://localhost:1338/latest/meta-data/public-keys/0/openssh-key'
+    ec2_userdata_uri = 'http://localhost:1338/latest/user-data/'
+    ec2_dynamicdata_uri = 'http://localhost:1338/latest/dynamic/'
 
     def __init__(self, module, ec2_metadata_token_uri=None, ec2_metadata_uri=None, ec2_sshdata_uri=None, ec2_userdata_uri=None, ec2_dynamicdata_uri=None):
         self.module = module
